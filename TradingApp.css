@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #5c5c5c;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.Heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 3px;
+    padding: 10px;
+    background-color: #4c4c4c;
+    color: white;
+    border-radius: 10px;
+}
+
+.welcometext {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: lightblue;
+}
+
+.introtext {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.Balance {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.history {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#buyBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#buyBtn:hover {
+
+    background-color: #218838;
+    transition: color 0.3s ease-in-out;
+}
+
+#sellBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#sellBtn:hover {
+
+    background-color: #c82333;
+    transition: color 0.3s ease-in-out;
+}
+
+#price {
+    transition: color 0.3s ease-in-out;
+}
+
+#balance,
+#wallet {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+
+
+.qr-code-container {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background: lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    width: 20vw;
+    /* Default width for larger screens */
+    min-width: 120px;
+    /* Ensures it's not too small */
+}
+
+/* Ensure the image inside the container scales properly */
+.qr-code-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .qr-code-container {
+        width: 25vw;
+        /* Slightly smaller */
+        right: 2%;
+        bottom: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .qr-code-container {
+        width: 40vw;
+        /* Bigger for very small screens to remain readable */
+        right: 2%;
+        bottom: 2%;
+    }
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    border-color: none;
+    font-size: 10 px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+.close-btn:hover {
+    background: darkred;
+}
+
+.footer {
+    width: 100%;
+    background-color: #4c4c4c;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
